@@ -1,5 +1,5 @@
 language: java
-sudo:false
+sudo: false
 jdk:
 - oraclejdk8
 #git strips the wrapper jar file so we have to force its downloaad during the build
