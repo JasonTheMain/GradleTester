@@ -5,6 +5,4 @@ jdk:
 #git strips the wrapper jar file so we have to force its downloaad during the build
 sudo: false
 before_install:
-- chmod +x gradlew/wrapper/gradle-wrapper.jar
-- git add -f gradle/wrapper/gradle-wrapper.jar
-
+- chmod +x gradlew/wrapper
