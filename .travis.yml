@@ -7,4 +7,10 @@ jdk:
 - oraclejdk8
 #git strips the wrapper jar file so we have to force its downloaad during the build
 
-
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
