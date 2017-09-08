@@ -4,5 +4,7 @@ jdk:
 - oraclejdk8
 #git strips the wrapper jar file so we have to force its downloaad during the build
 sudo: false
-before_install:
-- chmod +x gradlew/wrapper
+before_script:
+-chmod a+x gradlew
+
+sccript: ./gradlew build
