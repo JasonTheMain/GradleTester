@@ -7,4 +7,4 @@ sudo: false
 before_script:
 -chmod a+x gradle
 
-sccript: ./gradlew build
+sccript: ./gradle build
